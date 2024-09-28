@@ -18,7 +18,7 @@ html, body {
 }
 
 .logomain {
-  width:100px;
+  width:60px;
   height: auto;
   will-change: filter;
   transition: filter 300ms;
@@ -80,3 +80,6 @@ footer{
   left: 0;
   right: 0;
 }
+
+
+
