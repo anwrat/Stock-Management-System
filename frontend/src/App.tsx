@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './App.css'
+import logo from "./assets/asianpaints.png";
 
 function App() {
   const navigate = useNavigate();
@@ -10,8 +11,9 @@ function App() {
 
   return (
     <>
-      <h1>Gandaki Trade Link</h1>
       <div className="card">
+      <img src={logo} className='logomain'></img>
+      <h1>Gandaki Trade Link</h1>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
