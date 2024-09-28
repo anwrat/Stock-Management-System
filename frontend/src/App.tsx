@@ -11,22 +11,23 @@ function App() {
 
   return (
     <>
-      <div className="card">
-      <img src={logo} className='logomain'></img>
-      <h1>Gandaki Trade Link</h1>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+      <header className="card">
+        <img src={logo} className='logomain'></img>
+        <h1 className='toph'>Gandaki Trade Link</h1>
+      </header>
+      <div className='middle'>
+        <h2>Choose a category</h2>
+        <button onClick={()=>handleRedirect("/interior")}>Interior Colors</button>
+        <p className="read-the-docs">
+          Choose a type of color
         </p>
+        <button onClick={()=>handleRedirect("/exterior")}>Exterior Colors</button>
+        <button onClick={()=>handleRedirect("/enamel")}>Enamel Colors</button>
+        <button onClick={()=>handleRedirect("/primer")}>Primers</button>
+        <button onClick={()=>handleRedirect("/ink")}>Color Ink</button>
+        <button onClick={()=>handleRedirect("/other")}>Other Items</button>
       </div>
-      <button onClick={()=>handleRedirect("/interior")}>Interior Colors</button>
-      <p className="read-the-docs">
-        Choose a type of color
-      </p>
-      <button onClick={()=>handleRedirect("/exterior")}>Exterior Colors</button>
-      <button onClick={()=>handleRedirect("/enamel")}>Enamel Colors</button>
-      <button onClick={()=>handleRedirect("/primer")}>Primers</button>
-      <button onClick={()=>handleRedirect("/ink")}>Color Ink</button>
-      <button onClick={()=>handleRedirect("/other")}>Other Items</button>
+      <footer>&copy; Anwesh Rawat</footer>
     </>
   )
 }
