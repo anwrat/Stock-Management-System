@@ -53,17 +53,21 @@ html, body {
   height: 100px;
   position: fixed;
   gap:1rem;
+  top:0;
   margin: 0;
   left: 0;
   right: 0;
 }
 
-.middle{
-  margin-top: 200px;
+.mainh{
+  color: rgb(0, 0, 0);
 }
 
-.read-the-docs {
-  color: #888;
+.middle{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
 }
 
 footer{
