@@ -2,8 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const authRoutes = require('./routes/auth');
-const recRoutes=require("./routes/recipe");
+const introutes = require('./routes/Interiorroutes');
 
 const app = express();
 app.use(cors());
@@ -26,9 +25,8 @@ mongoose
   .then(() => console.log('Connected to database'))
   .catch((error) => console.log(error));
 
-// Use authentication routes
-app.use('/api', authRoutes);
-app.use('/api',recRoutes);
+
+app.use('/api', introutes);
 
 // Start the server
 app.listen(port, () => {
